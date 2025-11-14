@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Plantadeira" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorTertiary">@color/light_primary</item>
+    </style>
+
+    <style name="Theme.Plantadeira" parent="Base.Theme.Plantadeira" />
+</resources>
