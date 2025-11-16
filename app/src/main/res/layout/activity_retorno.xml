@@ -18,11 +18,11 @@
         android:clickable="true"
         android:contentDescription="@string/back_button_description"
         android:focusable="true"
-        app:backgroundTint="#646464"
+        app:backgroundTint="?attr/fabBackgroundColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert"
-        app:tint="#FFFFFF"
+        app:tint="?attr/fabIconColor"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <!-- ScrollView para garantir que o conteúdo seja rolável em telas menores -->
@@ -109,7 +109,7 @@
                         android:id="@+id/resultadoSementes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/dark_primary"
+                        android:textColor="?attr/colorPrimary"
                         android:textSize="60sp"
                         android:textStyle="bold"
                         tools:text="11.85" />
@@ -148,9 +148,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    android:layout_marginBottom="8dp">
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -158,24 +158,24 @@
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:layout_marginEnd="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="?attr/colorOnSurface"
                         tools:ignore="HardcodedText" />
                     <TextView
                         android:id="@+id/resultadoEixoE"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
-                        android:textColor="@android:color/black"
-                        tools:text="15"/>
+                        android:textColor="?attr/colorOnSurface"
+                        tools:text="14"/>
                 </LinearLayout>
 
                 <!-- Eixo F -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    android:layout_marginBottom="8dp">
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -183,14 +183,14 @@
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:layout_marginEnd="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="?attr/colorOnSurface"
                         tools:ignore="HardcodedText" />
                     <TextView
                         android:id="@+id/resultadoEixoF"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="?attr/colorOnSurface"
                         tools:text="14"/>
                 </LinearLayout>
             </LinearLayout>
