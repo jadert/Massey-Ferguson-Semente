@@ -108,12 +108,18 @@ public class Retorno extends AppCompatActivity {
 
     private void updateUI() {
         Combinacao resultadoFinal = getCombinacao();
-        // Define o texto do resultado principal (sementes)
-        resultadoSementesTextView.setText(getString(R.string.resultado_final_sementes, resultadoFinal.sementesPorMetro));
 
-        // Define o texto para cada eixo individualmente
-        resultadoEixoE.setText(resultadoFinal.eixoE);
-        resultadoEixoF.setText(resultadoFinal.eixoF);
+        if (resultadoFinal != null) {
+            // Se o resultado existe, atualiza a UI normalmente
+            resultadoSementesTextView.setText(getString(R.string.resultado_final_sementes, resultadoFinal.sementesPorMetro));
+            resultadoEixoE.setText(resultadoFinal.eixoE);
+            resultadoEixoF.setText(resultadoFinal.eixoF);
+        } else {
+            // Se o resultado é nulo, exibe uma mensagem de aviso
+            resultadoSementesTextView.setText("--"); // ou "N/A"
+            resultadoEixoE.setText("--");
+            resultadoEixoF.setText("--");
+        }
     }
 
     private Combinacao getCombinacao() {
